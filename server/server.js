@@ -3,10 +3,10 @@ import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
-// import the router from your routes file
+import eventsRouter from './routes/events.js'
+import locationsRouter from './routes/locations.js'
 
-
-dotenv.config()
+dotenv.config({ path: '.env'})
 
 const PORT = process.env.PORT || 3000
 
@@ -22,8 +22,9 @@ else if (process.env.NODE_ENV === 'production') {
     app.use(express.static('public'))
 }
 
-// specify the api path for the server to use
-
+app.use('/events', eventsRouter)
+app.use('/', locationsRouter)
+// app.get('/', (_, res) => res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">UnityGrid Plaza API</h1>'))
 
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>
