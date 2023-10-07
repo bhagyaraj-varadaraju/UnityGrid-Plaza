@@ -18,12 +18,14 @@ The following **required** functionality is completed:
 - [x] **Each Location detail page should have its own unique URL**
 
 The following **optional** features are implemented:
-- [x] An additional page shows all possible `Events` that the user can sort and filter by `Location`
-- [x] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
+- [] An additional page shows all possible `Events` that the user can sort and filter by `Location`
+- [] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
+
+https://github.com/bhagyaraj-varadaraju/UnityGrid-Plaza/assets/20358558/06a6e4a6-93bd-4211-94eb-2a929d59367a
 
 ## License
 
