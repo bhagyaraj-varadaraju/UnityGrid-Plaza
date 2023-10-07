@@ -37,3 +37,10 @@
 .location-events main i {
     margin-right: 10px;
 }
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+}

@@ -21,7 +21,7 @@ const getLocationById = async (req, res) => {
 
 const getEventsByLocation = async (req, res) => { 
     try {
-        const id = parseInt(req.params.id)
+        const id = req.params.id;
         const results = await pool.query('SELECT * FROM events WHERE location_id = $1', [id])
         res.status(200).json(results.rows)
     } catch(error) {

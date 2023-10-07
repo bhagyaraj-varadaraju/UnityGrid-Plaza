@@ -9,4 +9,14 @@ const getEvents = async (req, res) => {
     }
 }
 
-export default { getEvents }
+const getEventById = async (req, res) => {
+    try {
+        const id = req.params.id
+        const results = await pool.query('SELECT * FROM events WHERE id = $1', [id])
+        res.status(200).json(results.rows[0])
+    } catch(error) {
+        res.status(409).json({ error: error.message })
+    }
+}
+
+export default { getEvents, getEventById }
