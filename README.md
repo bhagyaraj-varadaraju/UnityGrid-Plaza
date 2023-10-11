@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-https://github.com/bhagyaraj-varadaraju/UnityGrid-Plaza/assets/20358558/06a6e4a6-93bd-4211-94eb-2a929d59367a
+https://github.com/bhagyaraj-varadaraju/UnityGrid-Plaza/assets/20358558/0aa5b427-a9df-400d-9d5b-770d60091adf
 
 ## License
 
